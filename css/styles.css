@@ -604,8 +604,14 @@ progress {
 
 .img-fluid {
   max-width: 100%;
+
   height: auto;
 }
+
+.pt {
+  margin: 10px;
+}
+
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -1168,6 +1174,9 @@ progress {
     width: 25%;
   }
 
+.lefttext {
+  text-align: left;
+}
   .col-md-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
@@ -2188,6 +2197,25 @@ progress {
   font-size: 0.875em;
   color: #6c757d;
 }
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+#more4 {display: none;}
+#more5 {display: none;}
+#more6 {display: none;}
+#more7 {display: none;}
+#more8 {display: none;}
+#more9 {display: none;}
+#more10 {display: none;}
+#more11 {display: none;}
+#more12 {display: none;}
+#more13 {display: none;}
+#more14 {display: none;}
+#more15 {display: none;}
+#more16 {display: none;}
+#more17 {display: none;}
+#more18 {display: none;}
+#more19 {display: none;}
 
 .form-control {
   display: block;
@@ -2442,6 +2470,87 @@ textarea.form-control-lg {
     .leftm {
       margin-left: 10px !important;
     }
+}
+
+
+.card{
+    border:none;
+
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.card:before{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#E1BEE7;
+    transform:scaleY(1);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#8E24AA;
+    transform:scaleY(0);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after{
+    transform:scaleY(1);
+}
+
+
+.fonts{
+    font-size:11px;
+}
+
+.social-list{
+    display:flex;
+    list-style:none;
+    justify-content:center;
+    padding:0;
+}
+
+.social-list li{
+    padding:10px;
+    color:#8E24AA;
+    font-size:19px;
+}
+
+
+.buttons button:nth-child(1){
+       border:1px solid #8E24AA !important;
+       color:#8E24AA;
+       height:40px;
+}
+
+.buttons button:nth-child(1):hover{
+       border:1px solid #8E24AA !important;
+       color:#fff;
+       height:40px;
+       background-color:#8E24AA;
+}
+
+.buttons button:nth-child(2){
+       border:1px solid #8E24AA !important;
+       background-color:#8E24AA;
+       color:#fff;
+        height:40px;
 }
 
 .leftm {
@@ -8783,6 +8892,38 @@ textarea.form-control-lg {
   .d-md-table {
     display: table !important;
   }
+
+.user-pic {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: 20px auto 20px;
+    border-left: 3px solid #ddd;
+    border-right: 3px solid #ddd;
+    border-top: 3px solid #007bff;
+    border-bottom: 3px solid #007bff;
+    transition: 0.5s;
+}
+.card-box:hover .user-pic {
+    transform: rotate(0deg);
+    transform: scale(1.1);
+}
+.card-box {
+    padding: 15px;
+    background-color: #fdfdfd;
+    margin: 20px 0px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0px 0px 8px 0px #d4d4d4;
+    transition: 0.5s;
+}
+.card-box:hover {
+  border: 1px solid #007bff;
+}
+.card-box p {
+    color: #808080;
+}
 
   .d-md-table-row {
     display: table-row !important;

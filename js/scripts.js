@@ -24,6 +24,22 @@ setTimeout(function(){
     document.getElementsByClassName("newButton")[0].classList.add("loaded")
 },4000);
 
+function readMore(number) {
+  var dots = document.getElementById("dots" + number);
+  var moreText = document.getElementById("more" + number);
+  var btnText = document.getElementById("readMore" + number);
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "About"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Activate Bootstrap scrollspy on the main nav element
